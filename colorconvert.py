@@ -8,7 +8,7 @@ parser.add_argument('mapFile', type = str, help = 'Text file containing each col
 
 args = parser.parse_args()
 
-if os.path.isfile(args.saveFile) == True and os.path.isfile(args.mapFile):
+if os.path.isfile(args.saveFile) and os.path.isfile(args.mapFile):
 
     # creates a dictionary of the color mapping
     mapping = {}
